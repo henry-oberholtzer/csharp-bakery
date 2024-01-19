@@ -27,8 +27,6 @@ Bakery.Solution/
 │  ├─ Order.cs
 │  ├─ BreadOrder.cs
 │  ├─ PastryOrder.cs
-├─ UserInterfaceModels/
-│  ├─ Banners.cs
 ├─ Program.cs
 Bakery.Tests/
 ├─ ModelTests/
