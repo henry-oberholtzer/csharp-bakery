@@ -34,5 +34,13 @@ namespace Bakery.Models
             PastryOrder order = new(1);
             Assert.AreEqual(order.Price, expected);
         }
+
+        [TestMethod]
+        public void PastryOrderConstructor_GetDiscountRate_Int()
+        {
+            int rate = 4;
+            PastryOrder newOrder = new(3);
+            Assert.AreEqual(newOrder.DiscountRate, rate);
+        }
     }
 }
