@@ -19,6 +19,15 @@ namespace Bakery.Models
         }
 
         [TestMethod]
+        public void BreadOrderConstructor_SetQuantity_BreadOrder()
+        {
+            BreadOrder order = new(3);
+            int newQuantity = 5;
+            order.Quantity = newQuantity;
+            Assert.AreEqual(order.Quantity, newQuantity);
+        }
+
+        [TestMethod]
         public void BreadOrderConstructor_GetPrice_Int()
         {
             int expected = 5;

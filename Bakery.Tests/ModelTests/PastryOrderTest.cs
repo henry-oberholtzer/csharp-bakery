@@ -17,5 +17,14 @@ namespace Bakery.Models
             PastryOrder order = new(expected);
             Assert.AreEqual(order.Quantity, expected);
         }
+
+        [TestMethod]
+        public void PastryOrderConstructor_SetQuantity_PastryOrder()
+        {
+            PastryOrder order = new(3);
+            int newQuantity = 5;
+            order.Quantity = newQuantity;
+            Assert.AreEqual(order.Quantity, newQuantity);
+        }
     }
 }
