@@ -41,8 +41,8 @@ Bakery.Tests/
 - .NET required for set up.
 - To establish locally, download the [repository]() to your computer.
 - Open the folder with your terminal and run `dotnet restore` to gather necessary resources.
-- To run the application, within the solution folder, `dotnet run` after the restore.
-- The site will be live on the mentioned local port.
+- To run the application, within the solution folder, run the command `dotnet run` after the restore.
+- The application will appear in the terminal.
 
 ## Known Bugs
 
