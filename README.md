@@ -1,6 +1,6 @@
 # Bakery Order
 
-A simple C# console application exploring the use of classes and static methods
+A simple console application exploring the use of classes and static methods in C#
 
 By Henry Oberholtzer
 
