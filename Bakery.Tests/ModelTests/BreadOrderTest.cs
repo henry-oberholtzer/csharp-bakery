@@ -6,8 +6,16 @@ namespace Bakery.Models
         [TestMethod]
         public void BreadOrderConstructor_CreatesInstanceOfBreadOrder_BreadOrder()
         {
-            BreadOrder newOrder = new();
+            BreadOrder newOrder = new(4);
             Assert.AreEqual(newOrder.GetType(), typeof(BreadOrder));
+        }
+
+        [TestMethod]
+        public void BreadOrderConstructor_GetQuantity_BreadOrder()
+        {
+            int quantity = 5;
+            BreadOrder newOrder = new(quantity);
+            Assert.AreEqual(newOrder.Quantity, quantity);
         }
     }
 }
