@@ -32,9 +32,8 @@ Bakery.Solution/
 ├─ Program.cs
 Bakery.Tests/
 ├─ ModelTests/
-│  ├─ OrderTests.cs
-│  ├─ BreadOrderTests.cs
-│  ├─ PastryOrderTests.cs
+│  ├─ BreadOrderTest.cs
+│  ├─ PastryOrderTest.cs
 ```
 
 ## Setup/Installation Requirements
