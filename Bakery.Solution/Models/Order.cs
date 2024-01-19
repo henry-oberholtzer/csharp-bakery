@@ -8,7 +8,7 @@ namespace Bakery.Models
 
         public virtual int GetTotal()
         {
-            return (Quantity * Price) - (Quantity / DiscountRate);
+            return (Quantity * Price) - Price * (Quantity / DiscountRate);
         }
     }
 }
