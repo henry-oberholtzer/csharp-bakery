@@ -5,6 +5,10 @@ namespace Bakery.Models
         public abstract int DiscountRate { get; }
         public abstract int Price { get; }
         public int Quantity { get; set; }
-        // public abstract int GetTotal();
+
+        public virtual int GetTotal()
+        {
+            return (Quantity * Price) - (Quantity / DiscountRate);
+        }
     }
 }

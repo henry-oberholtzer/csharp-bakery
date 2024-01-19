@@ -33,17 +33,22 @@ namespace Bakery.Models
             BreadOrder newOrder = new(2);
             Assert.AreEqual(newOrder.DiscountRate, rate);
         }
-        // [TestMethod]
-        // public void BreadOrderConstructor_GetTotal_int()
-        // {
-        //     int expectedOne = 5;
-        //     int expectedTwo = 10;
-        //     int expectedThree = 10;
-        //     int expectedFour = 15;
-        //     BreadOrder orderOne = new(1);
-        //     BreadOrder orderTwo = new(2);
-        //     BreadOrder orderThree = new(3);
-        //     BreadOrder orderFour = new(4);
-        // }
+
+        [TestMethod]
+        public void BreadOrderConstructor_GetTotal_int()
+        {
+            int expectedOne = 5;
+            int expectedTwo = 10;
+            int expectedThree = 10;
+            int expectedFour = 15;
+            BreadOrder orderOne = new(1);
+            BreadOrder orderTwo = new(2);
+            BreadOrder orderThree = new(3);
+            BreadOrder orderFour = new(4);
+            Assert.AreEqual(expectedOne, orderOne.GetTotal());
+            Assert.AreEqual(expectedTwo, orderTwo.GetTotal());
+            Assert.AreEqual(expectedThree, orderThree.GetTotal());
+            Assert.AreEqual(expectedFour, orderFour.GetTotal());
+        }
     }
 }
