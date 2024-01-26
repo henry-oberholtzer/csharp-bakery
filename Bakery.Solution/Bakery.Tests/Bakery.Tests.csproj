@@ -17,7 +17,7 @@
   </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Bakery.Solution\Bakery.Solution.csproj" />
+      <ProjectReference Include="..\Bakery\Bakery.Solution.csproj" />
   </ItemGroup>
 
 
