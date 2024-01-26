@@ -33,9 +33,9 @@ namespace Bakery
 
         static void OrderManager(Order orderBread, Order orderPastry)
         {
-            string[] breadNames = ["bread", "loaves"];
+            string[] breadNames = {"bread", "loaves"};
             OrderLoop(orderBread, breadNames);
-            string[] pastryNames = ["pastry", "pastries"];
+            string[] pastryNames = {"pastry", "pastries"};
             OrderLoop(orderPastry, pastryNames);
             Console.WriteLine("\n\n");
             Console.WriteLine("Let's recap your order:");
